@@ -1,0 +1,34 @@
+@import 'mixins';
+@import 'fonts';
+@import 'icons';
+
+$minWidth: 320px;
+$maxWidth: 1440;
+$maxWidthContainer: 1046;
+$md1: $maxWidthContainer + 76;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 575.98;
+
+$fontFamily: 'Montserrat';
+
+@import 'null';
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+._container {
+    max-width: $maxWidthContainer + px;
+    margin: 0 auto;
+    @media (max-width: ($md1+px)) {
+        max-width: none;
+        padding: 0 38px;
+    }
+}
+
+@import './sections/header';
+@import './sections/footer';
