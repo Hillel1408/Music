@@ -1,12 +1,22 @@
 .sidebar {
     background: #14161d;
-    padding: 29px 20px 279px 0;
     border-top-right-radius: 8px;
     &__block {
+        padding: 29px 20px 30px 0;
         width: 222px;
         margin-left: 76px;
+        position: relative;
         @media (max-width: 1950px) {
             margin-left: 0;
+        }
+        &::after {
+            content: '';
+            width: 40px;
+            height: 100%;
+            position: absolute;
+            right: -40px;
+            top: 0;
+            background-color: #060608;
         }
     }
     &__user {
