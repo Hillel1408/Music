@@ -896,6 +896,7 @@ h6 {
   color: #b1b2b8;
   width: 50%;
   padding: 29px 10px 20px 20px;
+  cursor: pointer;
 }
 
 .content__playing-tabs li.active {
@@ -915,6 +916,23 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.content__playing-name p:first-child {
+  color: white;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 9px;
+}
+
+.content__playing-name p:last-child {
+  color: #99999f;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .content__playing-img {

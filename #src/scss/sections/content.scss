@@ -299,6 +299,7 @@
                 color: #b1b2b8;
                 width: 50%;
                 padding: 29px 10px 20px 20px;
+                cursor: pointer;
                 &.active {
                     color: #ffffff;
                     border-bottom: 4px solid #016b9b;
@@ -312,6 +313,21 @@
             padding: 8px 33px 8px 16px;
             & > div:first-child {
                 display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+        &-name {
+            p:first-child {
+                color: white;
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 9px;
+            }
+            p:last-child {
+                color: #99999f;
+                font-size: 12px;
+                line-height: 16px;
             }
         }
         &-img {
