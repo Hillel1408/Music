@@ -1,0 +1,38 @@
+.player {
+    position: fixed;
+    width: 100%;
+    padding: 16px 0 17px 0;
+    background: #0f0f17;
+    bottom: 0;
+    display: flex;
+    &:before {
+        position: absolute;
+        content: '';
+        display: block;
+        top: -64px;
+        opacity: 0.6;
+        height: 64px;
+        width: 100%;
+        background: rgba(28, 29, 35, 0);
+        background: linear-gradient(
+            180deg,
+            rgba(28, 29, 35, 0) 0%,
+            rgba(6, 6, 8, 0.77) 55.2%,
+            #060608 100%
+        );
+    }
+    &__progress {
+        width: 100%;
+        height: 3px;
+        background: #33374a;
+        position: absolute;
+        top: 0;
+        &-block {
+            width: 70%;
+            height: 100%;
+            background: #2a86c7;
+            top: 0;
+            position: absolute;
+        }
+    }
+}
