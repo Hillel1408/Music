@@ -1,6 +1,18 @@
 .footer {
     padding: 59px 0 150px 0;
     background-color: #060608;
+    @media (max-width: 920px) {
+        padding: 59px 0 280px 0;
+    }
+    &__block {
+        flex: 1 1 auto;
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 24px;
+        color: #ffffff;
+        margin-top: 49px;
+    }
     &__container {
         max-width: 938px;
         margin: 0 auto;

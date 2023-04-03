@@ -37,14 +37,17 @@
             color: #b1b2b8;
             position: relative;
             padding: 0 11px;
-            &.active:after {
-                content: '';
-                display: block;
-                width: 24px;
-                height: 2px;
-                background-color: #2a86c7;
-                position: absolute;
-                left: 11px;
+            &.active {
+                color: white;
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 24px;
+                    height: 2px;
+                    background-color: #2a86c7;
+                    position: absolute;
+                    left: 11px;
+                }
             }
         }
         &-icon {
